@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --nvidia-green: #76B900;
+    --nvidia-dark: #0B0B0B;
+    --nvidia-card: #121412;
+    --nvidia-border: #1E261A;
+  }
+
+  body {
+    background-color: #0B0B0B;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #232B1F;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #76B900;
+}
+
+/* Glowing green subtle utility */
+.nvidia-glow {
+  box-shadow: 0 0 25px -5px rgba(118, 185, 0, 0.25);
+}
+
+.nvidia-glow-sm {
+  box-shadow: 0 0 12px -2px rgba(118, 185, 0, 0.2);
+}
+
+.nvidia-border-glow:hover {
+  border-color: rgba(118, 185, 0, 0.6);
+  box-shadow: 0 0 16px -4px rgba(118, 185, 0, 0.2);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.6s infinite ease-in-out;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "NVIDIA AI Developer Hub",
+  "description": "Plataforma avançada para desenvolvedores e arquitetos de soluções de IA explorarem microserviços NVIDIA NIM, dimensionamento de GPUs Blackwell/Hopper e playground de inferência de ultra-baixa latência.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
